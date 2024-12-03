@@ -1,0 +1,1 @@
+Todo List front end built with React (using Vite for setup), TypeScript and some ESLint rules. 
