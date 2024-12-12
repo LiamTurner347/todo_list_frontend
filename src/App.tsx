@@ -40,10 +40,11 @@ function App() {
 
   // handle delete todo
   const handleDelete = async (id: number ): Promise<void> => {
-    await deleteTodo(id)
-    setTodos((prevState) => prevState.filter((todo) => todo.id !== id))
+    const response: boolean = await deleteTodo(id)
+    if (response) {
+      setTodos((prevState) => prevState.filter((todo) => todo.id !== id))
+    }
   }
-  
 
   // handle click outside modal form
   const handleMouseDown = async (e: React.SyntheticEvent) => {

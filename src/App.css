@@ -19,7 +19,7 @@ mark {
 abbr { border: none; }
 summary::-webkit-details-marker { display: none; }
 
-/* End of Whitepsace Reset */
+/* End of Whitespace Reset */
 
 /* General styling */
 
@@ -98,26 +98,6 @@ main li {
   justify-content: space-between;
   line-height: 48px;
 }
-
-/*
-label[for="nav-toggle"] {
-  background: url("/images/hamburger.png") center / contain no-repeat;
-  color: transparent;
-  display: block;
-  height: 24px;
-  margin-left: 11px;
-  width: 24px;
-  visibility: hidden;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-input[name="nav-toggle"]:checked + nav {
-  flex-basis: 335px;
-}
-*/
 
 label[for="modal-toggle"] {
   flex: auto;
@@ -345,12 +325,6 @@ button.add-todo:hover {
   vertical-align: middle;
   opacity: 0.7;
   transition: opacity 0.2s ease-in-out;
-  /*
-  // font-size: 0;  Hide any text content 
-  color: transparent;  Make any remaining text transparent 
-  text-indent: -9999px;  Move text off-screen 
-  overflow: hidden;  Hide any overflowing content 
-  */
 }
 
 .delete:hover,
@@ -358,8 +332,7 @@ button.add-todo:hover {
   opacity: 1;
 }
 
-/* Media: center the modal in the page,
-rather than inside the todo list */
+/* Media: center the modal in the page, rather than inside the todo list */
 
 @media screen and (max-width: 1024px) {
   main {
@@ -371,8 +344,7 @@ rather than inside the todo list */
   }
 }
 
-/* Media: adjust the modal to
-a single column layout */
+/* Media: adjust the modal to a single column layout */
 
 @media screen and (max-width: 607px) {
   #modal {

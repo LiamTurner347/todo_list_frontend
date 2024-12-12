@@ -23,9 +23,14 @@ export const updateTodo = async (todo: UpdateTodo) => {
 export const deleteTodo = async (id: number) => {
   try {
     const response = await axios.delete<void>(`${baseUrl}/todos/${id}`)
-    return response.data
+    if (response.status === 204 ) {
+      return true
+    } else {
+      throw new Error(`Non success response: ${response.status}`)
+    }
   } catch (error) {
     console.error('Error deleting todo:', error)
+    return false
   }
 }
 

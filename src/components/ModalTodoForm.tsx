@@ -48,7 +48,6 @@ const ModalTodoForm = ({
     onToggleModal()
   }
 
-  // Split up the form functionality??
   return (
     <form id="modal">
       <ModalFormTitle
@@ -78,7 +77,7 @@ const ModalTodoForm = ({
       />
       
       <div className="modal-buttons">
-        <button type="submit" onClick={handleSubmit} disabled={!title}>
+        <button type="submit" onClick={handleSubmit} disabled={!(title.length >= 3)}>
           Save
         </button>
         <button
